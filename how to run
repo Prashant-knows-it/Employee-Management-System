@@ -1,0 +1,10 @@
+VS code Compile
+    javac -cp "lib/*" -d out $(Get-ChildItem -Recurse -Filter *.java src | Select-Object -ExpandProperty FullName)
+VS code Run
+    javac -cp "lib/*" -d out src\employee\management\system\*.java
+
+CMD Compile
+    javac -cp "lib/*" -d out src\employee\management\system\*.java
+CMD Run
+    java -cp "lib/*;out" employee.management.system.Splash
+
